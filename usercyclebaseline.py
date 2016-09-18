@@ -4,7 +4,7 @@ totaldays = raw_input("Enter the avg number of days you menstruate per month:")
 try:
   totaldays = float(rawstr)
 except:
-  totaldays = 5
+  totaldays = -1
 
 if totaldays > 0:
   print "Thanks!"
@@ -15,7 +15,7 @@ date = raw_input("Enter the day (1-30/31) of the month your period normally star
 try:
   date = float(rawstr)
 except:
-  date = 1
+  date = -1
   
 if totaldays > 0:
   print "Thanks!"
